@@ -6,19 +6,19 @@ const components = [
   {
     projectName: "Random Color Generator",
     description: "Generates Random Color.",
-    path: "/random-color-generator",
+    path: "/React-JS-Learning-Projects/random-color-generator",
     component: <RColorGenerator />,
   },
   {
     projectName: "Star Rating",
     description: "Allows Rating by clicking the stars.",
-    path: "/star-rating",
+    path: "/React-JS-Learning-Projects/star-rating",
     component: <StarRating noOfStars={10}/>,
   },
   {
     projectName: "Image Slider",
     description: "Allows image viewing through Sliding.",
-    path: "/image-slider",
+    path: "/React-JS-Learning-Projects/image-slider",
     component: <ImageSlider />,
   },
 ];
