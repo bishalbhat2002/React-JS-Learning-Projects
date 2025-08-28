@@ -1,17 +1,5 @@
-<<<<<<< HEAD
-# React + Vite
+#It contains Basic React Project I built while Learning React. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#Used Technologies = React + Tailwind CSS
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# React-JS-Learning-Projects
-Basic React Projects While learning React ... 
->>>>>>> c3df8243b9089b7abab7ead76585a5e7fbe8e347
+#Live Project Link : https://bishalbhat2002.github.io/React-JS-Learning-Projects/
