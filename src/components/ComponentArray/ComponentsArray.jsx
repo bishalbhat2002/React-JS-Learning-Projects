@@ -1,6 +1,7 @@
 import RColorGenerator from "../RandomColorGenerator/RColorGenerator";
 import StarRating from "../Star-rating/StarRating";
 import ImageSlider from "../ImageSlider/ImageSlider";
+import QrCodeGenerator from "../QrCodeGenerator/QrCodeGenerator";
 
 const components = [
   {
@@ -20,6 +21,12 @@ const components = [
     description: "Allows image viewing through Sliding.",
     path: "/React-JS-Learning-Projects/image-slider",
     component: <ImageSlider />,
+  }, 
+  {
+    projectName: "Qr Code Generator",
+    description: "Allows your to Generator Qr code.",
+    path: "/React-JS-Learning-Projects/Qr-code-generator",
+    component: <QrCodeGenerator/>,
   },
 ];
 
