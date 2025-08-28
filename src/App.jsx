@@ -11,7 +11,7 @@ const App = ()=>{
       <Header />
       
       <Routes>
-        <Route path="/" element={<ShowProjects />}/>
+        <Route path="/React-JS-Learning-Projects/" element={<ShowProjects />}/>
         {
           components.map((Component)=>{
             return <Route path={Component.path} element={Component.component}/>
