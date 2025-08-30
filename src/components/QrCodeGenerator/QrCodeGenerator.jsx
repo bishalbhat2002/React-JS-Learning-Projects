@@ -7,25 +7,31 @@ const QrCodeGenerator = () => {
   const [showQr, setShowQr] = useState(false);
 
   const generateQr = () => {
-    setShowQr(true);
-    setValue(inputValue);
-    setInputValue("");
+    if (inputValue.length > 0) {
+      setShowQr(true);
+      setValue(inputValue);
+      setInputValue("");
+    }
   };
 
-  const handleInput = (e)=>{
-     setInputValue(e.target.value)
-     if(showQr)
-       {
-            setShowQr(false)
-          } 
-  }
+  const handleInput = (e) => {
+    setInputValue(e.target.value);
+    if (showQr) {
+      setShowQr(false);
+    }
+  };
 
   return (
     <>
+      <div className="w-full bottom-10 flex justify-center">
+        <h1 className="my-2 px-10 py-5 rounded-md sm:text-lg xl:text-3xl font-extrabold bg-blue-400 text-gray-800 inline-block">
+          QR Code Generator
+        </h1>
+      </div>
       <section className="max-w-150 mx-auto p-5 rounded bg-red-300">
         <div className="flex justify-between gap-1">
           <input
-            onChange={(e)=>handleInput(e)}
+            onChange={(e) => handleInput(e)}
             type="text"
             name="input-text"
             value={inputValue}
@@ -34,7 +40,8 @@ const QrCodeGenerator = () => {
           />
           <button
             onClick={generateQr}
-            className={`px-5 text-lg rounded bg-gray-100 hover:scale-110 transition-transform duration-200 ease-in-out active:scale-95 ${inputValue.trim === "" ? "hidden" : ""
+            className={`px-5 text-lg rounded bg-gray-100 hover:scale-110 transition-transform duration-200 ease-in-out active:scale-95 ${
+              inputValue.trim === "" ? "hidden" : ""
             }`}
           >
             Generate
