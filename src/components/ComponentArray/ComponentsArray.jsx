@@ -3,6 +3,7 @@ import StarRating from "../Star-rating/StarRating";
 import ImageSlider from "../ImageSlider/ImageSlider";
 import QrCodeGenerator from "../QrCodeGenerator/QrCodeGenerator";
 import { PokemonView } from "../PokemonView/PokemonView";
+import  Counter  from "../CounterContext/Counter";
 
 const components = [
   {
@@ -34,7 +35,13 @@ const components = [
     description: "Allows you to view Pokemon.",
     path: "/React-JS-Learning-Projects/PokemonView",
     component: <PokemonView />,
-  },
+  },   
+  {
+    projectName: "Counter Context",
+    description: "Used Context Api (useContext Hook) to show Counting.",
+    path: "/React-JS-Learning-Projects/CounterContext",
+    component: <Counter />,
+  }, 
 ];
 
 export default components;
