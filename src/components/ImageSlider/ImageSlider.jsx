@@ -44,11 +44,11 @@ const ImageSlider = ({page=1, limit=10}) => {
 
   return (
     <>
-      <section>
-          <h1 className="m-6 px-10 py-7 rounded-xl flex justify-center font-extrabold text-4xl bg-slate-300 text-gray-800 ">
+      <section className="flex justify-center flex-col">
+          <h1 className="inline-block mx-auto my-2 lg:my-5 px-5 lg:px-10 py-5 lg:py-7 rounded-xl font-extrabold text-2xl lg:text-4xl bg-amber-300 text-gray-800 ">
                Image Slider
           </h1>
-        <div className="container w-145 mx-auto p-10 pb-6 flex flex-col justify-center bg-slate-500 rounded-lg shadow-xl relative">
+        <div className="w-130 h-100 md:w-145 md:h-110 mx-auto p-10 pb-6 flex flex-col justify-center bg-blue-300 rounded-lg shadow-xl relative">
           {
                (loading == true) ? <div className="text-2xl animate-bounce flex justify-center">Loading ...</div> :   
                images.map((image, index)=>{
@@ -63,11 +63,11 @@ const ImageSlider = ({page=1, limit=10}) => {
           }
                     
           <button onClick={showLeftImage}
-          className="text-3xl rounded-full bg-white absolute top-1/2 left-3 hover:scale-110 hover:bg-amber-200 active:scale-90 transition-transform duration-150 ease-in-out"
+          className="text-3xl rounded-full bg-white absolute top-1/2 left-2 hover:scale-110 hover:bg-amber-200 active:scale-90 transition-transform duration-150 ease-in-out"
           ><FcLeft /></button>
 
           <button onClick={showRightImage}
-          className="text-3xl rounded-full bg-white absolute top-1/2 right-3 hover:scale-110 hover:bg-amber-200 active:scale-90 transition-transform duration-150 ease-in-out"
+          className="text-3xl rounded-full bg-white absolute top-1/2 right-2 hover:scale-110 hover:bg-amber-200 active:scale-90 transition-transform duration-150 ease-in-out"
           ><FcRight /></button>
         
           <div className="mt-4 flex justify-center items-center gap-2">
@@ -80,7 +80,6 @@ const ImageSlider = ({page=1, limit=10}) => {
                }
           </div>
 
-      
           </div>
 
       </section>

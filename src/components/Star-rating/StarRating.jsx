@@ -20,7 +20,7 @@ const StarRating = ({noOfStars=5}) => {
   return (
     <>
     <h1 className='mt-5 text-2xl md:text-4xl font-bold text-center'>Rating Stars</h1>
-    <div className='h-20 w-100 mx-auto mt-5 p-5 flex justify-center gap-3 border border-b-gray-500 rounded-lg shadow-2xs bg-violet-400'>
+    <div className='h-20 w-90 mx-auto mt-5 p-5 flex justify-center gap-3 border border-b-gray-500 rounded-lg shadow-2xs bg-violet-400'>
      {
           [...Array(noOfStars)].map((_,index)=>{
                return <FaStar 
