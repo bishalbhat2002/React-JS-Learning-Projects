@@ -5,13 +5,17 @@ import ImageSlider from "../ImageSlider/ImageSlider";
 import components from "../ComponentArray/ComponentsArray";
 import { Routes, Route, Link } from "react-router";
 import { GoArrowUpRight } from "react-icons/go";
+import Header from "./Header";
 
 const ShowProjects = () => {
 
   return (
     <>
+
+      <Header />
+      
     {/* Project Show Section */}
-      <section className="flex justify-center flex-wrap gap-3 md:gap-7 mt-4 p-3 md:p-10 rounded-md bg-blue-200 text-gray-700">
+      <section className="container flex justify-center flex-wrap gap-3 md:gap-7 mt-4 p-3 md:p-10 rounded-md bg-blue-200 text-gray-700">
         {components.map((component, index) => {
           return <div key={index} className="max-h-50 w-100 p-5 md:p-10 pb-3 md:pb-6 rounded bg-white">
                
