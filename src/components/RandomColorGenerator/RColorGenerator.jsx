@@ -77,21 +77,21 @@ const RColorGenerator = () => {
 
         <div className="container h-15 lg:w-190 lg:h-20 flex justify-center gap-3 lg:gap-6 items-center mx-auto mt-5 px-5 py-5 bg-green-200 border border-gray-400 rounded-lg ">
           <button
-            className="h-9 lg:h-13 px-5 lg:px-10 rounded font-bold sm:text-sm xl:text-3xl bg-violet-600 text-white shadow-xl hover:scale-110 transition-transform duration-200 ease-in active:scale-95"
+            className="h-9 lg:h-13 px-5 lg:px-10 rounded font-bold text-sm xl:text-3xl bg-violet-600 text-white shadow-xl hover:scale-110 transition-transform duration-200 ease-in active:scale-95"
             onClick={() => handleTypeButtonClick("RGB")}
           >
             RGB
           </button>
 
           <button
-            className="h-9 lg:h-13 px-5 lg:px-10 rounded font-bold sm:text-sm xl:text-3xl bg-violet-600 text-white shadow-xl hover:scale-110 transition-transform duration-200 ease-in active:scale-95"
+            className="h-9 lg:h-13 px-5 lg:px-10 rounded font-bold text-sm xl:text-3xl bg-violet-600 text-white shadow-xl hover:scale-110 transition-transform duration-200 ease-in active:scale-95"
             onClick={() => handleTypeButtonClick("Hex")}
           >
             Hex Color
           </button>
 
           <button
-            className="h-9 lg:h-13 px-5 lg:px-10  rounded font-bold sm:text-sm xl:text-3xl bg-violet-600 text-white shadow-xl hover:scale-110 transition-transform duration-200 ease-in active:scale-95"
+            className="h-9 lg:h-13 px-5 lg:px-10  rounded font-bold text-sm xl:text-3xl bg-violet-600 text-white shadow-xl hover:scale-110 transition-transform duration-200 ease-in active:scale-95"
             onClick={() => generateColor()}
           >
             Generate Color
