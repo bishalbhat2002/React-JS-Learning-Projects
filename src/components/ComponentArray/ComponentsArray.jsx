@@ -4,6 +4,7 @@ import ImageSlider from "../ImageSlider/ImageSlider";
 import QrCodeGenerator from "../QrCodeGenerator/QrCodeGenerator";
 import { PokemonView } from "../PokemonView/PokemonView";
 import  Counter  from "../CounterContext/Counter";
+import  Cart  from "../CartContext/Cart";
 
 const components = [
   {
@@ -41,6 +42,12 @@ const components = [
     description: "Used Context Api (useContext Hook) to show Counting.",
     path: "/React-JS-Learning-Projects/CounterContext",
     component: <Counter />,
+  }, 
+  {
+    projectName: "Cart Context",
+    description: "Used Context Api (useContext Hook) to make Add to Cart Feature.",
+    path: "/React-JS-Learning-Projects/CartContext",
+    component: <Cart />,
   }, 
 ];
 
