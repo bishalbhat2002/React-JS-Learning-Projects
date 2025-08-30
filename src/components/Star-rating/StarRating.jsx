@@ -19,8 +19,8 @@ const StarRating = ({noOfStars=5}) => {
 
   return (
     <>
-    <h1 className='mt-5 text-4xl font-bold text-center'>Rating Stars</h1>
-    <div className=' h-20 w-140 mx-auto mt-5 p-5 flex justify-center gap-3 border border-b-gray-500 rounded-lg shadow-2xs bg-violet-400'>
+    <h1 className='mt-5 text-2xl md:text-4xl font-bold text-center'>Rating Stars</h1>
+    <div className='h-20 w-100 mx-auto mt-5 p-5 flex justify-center gap-3 border border-b-gray-500 rounded-lg shadow-2xs bg-violet-400'>
      {
           [...Array(noOfStars)].map((_,index)=>{
                return <FaStar 
@@ -28,7 +28,7 @@ const StarRating = ({noOfStars=5}) => {
                onClick={()=>handleStarClick(index)}
                onMouseEnter={()=>handleStarEnter(index)}
                onMouseLeave={()=>handleStarLeave(index)}
-               className={`inline text-3xl hover:scale-140 transition-transform duration-200 ease-in-out text-gray-900 
+               className={`inline text-3xl hover:scale-150 transition-transform duration-200 ease-in-out text-gray-900 
                     ${(hrating && index <= hrating) ? "text-yellow-400" : ""}
                     ${(rating && index <= rating) ? "text-yellow-400" : ""}`
                     } />
