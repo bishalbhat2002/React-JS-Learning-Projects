@@ -5,6 +5,7 @@ import QrCodeGenerator from "../QrCodeGenerator/QrCodeGenerator";
 import { PokemonView } from "../PokemonView/PokemonView";
 import  Counter  from "../CounterContext/Counter";
 import  Cart  from "../CartContext/Cart";
+import CounterUseReduce from "../CounterUseReduce/CounterUseReduce";
 
 const components = [
   {
@@ -48,6 +49,12 @@ const components = [
     description: "Used Context Api (useContext Hook) to make Add to Cart Feature.",
     path: "/React-JS-Learning-Projects/CartContext",
     component: <Cart />,
+  },
+  {
+    projectName: "Counter - Use Reducer",
+    description: "Used UseReducer Hook to make Counter [Increment / Decrement].",
+    path: "/React-JS-Learning-Projects/CounterUseReduce",
+    component: <CounterUseReduce/>,
   }, 
 ];
 
