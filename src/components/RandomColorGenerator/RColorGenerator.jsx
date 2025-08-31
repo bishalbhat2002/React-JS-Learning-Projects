@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { IoCopy } from "react-icons/io5";
 import toast, { Toaster } from "react-hot-toast";
+import Header from "../SmallComponents/Header";
 
 const RColorGenerator = () => {
   const [color, setColor] = useState("gray");
@@ -69,11 +70,7 @@ const RColorGenerator = () => {
           padding: "1px",
         }}
       >
-        <div className="w-full bottom-10 flex justify-center">
-          <h1 className="mt-2 px-10 py-5 rounded-md sm:text-lg xl:text-3xl font-extrabold bg-amber-300 text-gray-900 inline-block">
-            Random Color Generator
-          </h1>
-        </div>
+        <Header heading='Random Color Generator'/>
 
         <div className="container h-15 lg:w-190 lg:h-20 flex justify-center gap-3 lg:gap-6 items-center mx-auto mt-5 px-5 py-5 bg-green-200 border border-gray-400 rounded-lg ">
           <button

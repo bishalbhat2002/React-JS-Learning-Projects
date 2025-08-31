@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import { CounterProvider } from "./components/CounterContext/CounterContext.jsx";
 import { CartProvider } from "./components/CartContext/CartContext.jsx";
 import { UseReducerProvider } from "./components/CounterUseContext&UseReducer/UseReducerContext.jsx";
+import { ContextProvider } from "./components/ContextComponent/ContextComponent.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -13,7 +14,9 @@ createRoot(document.getElementById("root")).render(
       <CounterProvider>
         <CartProvider>
           <UseReducerProvider>
-            <App />
+            <ContextProvider>
+              <App />
+            </ContextProvider>
           </UseReducerProvider>
         </CartProvider>
       </CounterProvider>

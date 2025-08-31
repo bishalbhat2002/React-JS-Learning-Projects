@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+import Header from "../SmallComponents/Header";
 
 const CounterUseReduce = () => {
   const reducer = (state, action) => {
@@ -18,11 +19,7 @@ const CounterUseReduce = () => {
 
   return (
     <>
-      <div className="w-full bottom-10 flex justify-center">
-        <h1 className="my-2 px-10 py-4 rounded-md text-lg xl:text-2xl font-extrabold bg-blue-400 text-gray-800 inline-block">
-          Counter Using UseReducer Hook
-        </h1>
-      </div>
+      <Header heading="Counter Using UseReducer Hook" />
 
       {/* Displaying the Count */}
       <h1 className="mx-auto mt-5 lg:mt-6 w-100 lg:w-150 text-2xl lg:text-5xl rounded font-bold text-gray-800 bg-red-300 flex justify-center items-center">
