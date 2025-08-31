@@ -5,13 +5,16 @@ import "./index.css";
 import App from "./App.jsx";
 import { CounterProvider } from "./components/CounterContext/CounterContext.jsx";
 import { CartProvider } from "./components/CartContext/CartContext.jsx";
+import { UseReducerProvider } from "./components/CounterUseContext&UseReducer/UseReducerContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <StrictMode>
       <CounterProvider>
         <CartProvider>
-          <App />
+          <UseReducerProvider>
+            <App />
+          </UseReducerProvider>
         </CartProvider>
       </CounterProvider>
     </StrictMode>

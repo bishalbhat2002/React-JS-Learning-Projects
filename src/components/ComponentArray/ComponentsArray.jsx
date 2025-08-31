@@ -6,6 +6,7 @@ import { PokemonView } from "../PokemonView/PokemonView";
 import  Counter  from "../CounterContext/Counter";
 import  Cart  from "../CartContext/Cart";
 import CounterUseReduce from "../CounterUseReduce/CounterUseReduce";
+import CounterUseContextAndUseReducer from "../CounterUseContext&UseReducer/CounterUseContextAndUseReducer";
 
 const components = [
   {
@@ -55,6 +56,12 @@ const components = [
     description: "Used UseReducer Hook to make Counter [Increment / Decrement].",
     path: "/React-JS-Learning-Projects/CounterUseReduce",
     component: <CounterUseReduce/>,
+  },
+   {
+    projectName: "Counter - UseReducer & UseContext Hook",
+    description: "Used UseReducer & UseContext Hook to make Counter [Increment / Decrement].",
+    path: "/React-JS-Learning-Projects/CounterUseContext&UseReducer",
+    component: <CounterUseContextAndUseReducer />,
   }, 
 ];
 
