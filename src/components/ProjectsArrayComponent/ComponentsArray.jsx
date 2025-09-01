@@ -8,6 +8,7 @@ import  Cart  from "../CartContext/Cart";
 import CounterUseReduce from "../CounterUseReduce/CounterUseReduce";
 import CounterUseContextAndUseReducer from "../CounterUseContext&UseReducer/CounterUseContextAndUseReducer";
 import DerivedState from "../DerivedState/DerivedState";
+import UseRefHookExample from "../UseRefHookExample/UseRefHookExample";
 
 const components = [
   {
@@ -65,10 +66,16 @@ const components = [
     component: <CounterUseContextAndUseReducer />,
   },
     {
-    projectName: "Derived State",
+    projectName: "Derived State Example",
     description: "Used Variables to store states data... - Derived State",
     path: "/React-JS-Learning-Projects/DerivedState",
     component: <DerivedState/>
+  },
+   {
+    projectName: "UseRef Hook Example",
+    description: "Changing properties of an Element by clicking button.",
+    path: "/React-JS-Learning-Projects/UseRefHookExample",
+    component: <UseRefHookExample />
   }, 
 ];
 
