@@ -48,7 +48,7 @@ function Buttons() {
   } = useContext(ContextComponent);
 
   return (
-    <section className="mx-auto my-5 w-100 lg:w-160 px-5 py-4 rounded text-md lg:text-xl font-bold bg-amber-200">
+    <section className="mx-auto my-5 w-90 lg:w-160 px-5 py-4 rounded text-md lg:text-xl font-bold bg-amber-200">
       <p className="text-md font-semibold mb-3 text-center text-gray-600">
         Click on any Button to change the style of Components...
       </p>
@@ -74,7 +74,7 @@ function Button({ name, functn }) {
   return (
     <button
       onClick={functn}
-      className="px-3 lg:px-5 py-2 lg:py-3 bg-violet-400 text-sm lg:text-lg font-semibold text-white rounded hover:scale-105 active:scale-95 transition-transform duration-200 ease-in-out"
+      className="px-5 lg:px-8 py-2 lg:py-3 bg-violet-400 text-sm lg:text-lg font-semibold text-white rounded hover:scale-105 active:scale-95 transition-transform duration-200 ease-in-out"
     >
       {name}
     </button>
@@ -84,7 +84,7 @@ function Button({ name, functn }) {
 function ChangeComponentReference() {
   const { changeComponentReferenceuseRef } = useContext(ContextComponent);
   return (
-    <section className="mx-auto my-5 w-100 lg:w-160 px-5 py-4 rounded text-md lg:text-xl font-bold bg-amber-200 flex flex-col justify-center">
+    <section className="mx-auto my-5 w-90 lg:w-160 px-5 py-4 rounded text-md lg:text-xl font-bold bg-amber-200 flex flex-col justify-center">
       <p className="text-md font-semibold mb-3 text-center text-gray-600">
         Click the Button to change the Components Reference...
       </p>
