@@ -9,6 +9,7 @@ import CounterUseReduce from "../CounterUseReduce/CounterUseReduce";
 import CounterUseContextAndUseReducer from "../CounterUseContext&UseReducer/CounterUseContextAndUseReducer";
 import DerivedState from "../DerivedState/DerivedState";
 import UseRefHookExample from "../UseRefHookExample/UseRefHookExample";
+import BasicFormValidation from "../BasicFormValidation/BasicFormValidation";
 
 const components = [
   {
@@ -76,6 +77,12 @@ const components = [
     description: "Changing properties of an Element by clicking button.",
     path: "/React-JS-Learning-Projects/UseRefHookExample",
     component: <UseRefHookExample />
+  },
+    {
+    projectName: "Basic Form Validation Example",
+    description: "Validating the Basic Form using React Form Hook.",
+    path: "/React-JS-Learning-Projects/BasicFormValidation",
+    component: <BasicFormValidation />
   }, 
 ];
 
