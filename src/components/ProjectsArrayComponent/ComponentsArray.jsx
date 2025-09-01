@@ -10,6 +10,7 @@ import CounterUseContextAndUseReducer from "../CounterUseContext&UseReducer/Coun
 import DerivedState from "../DerivedState/DerivedState";
 import UseRefHookExample from "../UseRefHookExample/UseRefHookExample";
 import BasicFormValidation from "../BasicFormValidation/BasicFormValidation";
+import ComplexFormValidation from "../ComplexFormValidation/ComplexFormValidation";
 
 const components = [
   {
@@ -83,6 +84,12 @@ const components = [
     description: "Validating the Basic Form using React Form Hook.",
     path: "/React-JS-Learning-Projects/BasicFormValidation",
     component: <BasicFormValidation />
+  },
+    {
+    projectName: "Complex Form Validation Example",
+    description: "Validating the Complex Form using React Form Hook.",
+    path: "/React-JS-Learning-Projects/ComplexFormValidation",
+    component: <ComplexFormValidation />
   }, 
 ];
 
