@@ -28,11 +28,11 @@ const FAQ = () => {
                   <div className="inline-block font-bold mr-1">
                     {item.id}. 
                   </div>
-                  <div className="font-bold leading-4 mt-1">{item.question}</div>
+                  <div className="font-bold leading-5 mt-0.5">{item.question}</div>
                 </div>
 
                   {answer && answer === item.id ? (
-                    <div className="ml-5 leading-4 mt-2">{item.answer}</div>
+                    <div className="ml-5 leading-5 mt-0.5">{item.answer}</div>
                   ) : null}
                 </div>
 
