@@ -84,8 +84,7 @@ function FormBody() {
             className="px-2 py-1 border border-gray-600 rounded"
           >
             <option value="" selected={true} disabled={true}>
-              {" "}
-              Select Country{" "}
+              Select Country
             </option>
             <option value="nepal">Nepal</option>
             <option value="india">India</option>

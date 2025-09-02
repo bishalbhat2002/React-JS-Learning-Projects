@@ -72,34 +72,34 @@ const RColorGenerator = () => {
       >
         <Header heading='Random Color Generator'/>
 
-        <div className="container h-15 lg:w-190 lg:h-20 flex justify-center gap-3 lg:gap-6 items-center mx-auto mt-5 px-5 py-5 bg-green-200 border border-gray-400 rounded-lg ">
+        <div className="container w-90 lg:w-160 flex justify-center gap-3 lg:gap-6 items-center mx-auto mt-5 p-5 bg-green-200 border border-gray-400 rounded-lg ">
           <button
-            className="h-9 lg:h-13 px-5 lg:px-10 rounded font-bold text-sm xl:text-3xl bg-violet-600 text-white shadow-xl hover:scale-110 transition-transform duration-200 ease-in active:scale-95"
+            className="px-5 lg:px-10 py-2 rounded font-bold text-[12px] xl:text-xl bg-violet-600 text-white shadow-xl hover:scale-110 transition-transform duration-200 ease-in active:scale-95"
             onClick={() => handleTypeButtonClick("RGB")}
           >
             RGB
           </button>
 
           <button
-            className="h-9 lg:h-13 px-5 lg:px-10 rounded font-bold text-sm xl:text-3xl bg-violet-600 text-white shadow-xl hover:scale-110 transition-transform duration-200 ease-in active:scale-95"
+            className="px-5 lg:px-10 py-2 rounded font-bold text-[12px] xl:text-xl bg-violet-600 text-white shadow-xl hover:scale-110 transition-transform duration-200 ease-in active:scale-95"
             onClick={() => handleTypeButtonClick("Hex")}
           >
             Hex Color
           </button>
 
           <button
-            className="h-9 lg:h-13 px-5 lg:px-10  rounded font-bold text-sm xl:text-3xl bg-violet-600 text-white shadow-xl hover:scale-110 transition-transform duration-200 ease-in active:scale-95"
+            className="px-5 lg:px-10 py-2 rounded font-bold text-[12px] xl:text-xl bg-violet-600 text-white shadow-xl hover:scale-110 transition-transform duration-200 ease-in active:scale-95"
             onClick={() => generateColor()}
           >
             Generate Color
           </button>
         </div>
 
-        <div className="container h-15 lg:w-190  flex justify-center  gap-8 items-center mx-auto mt-5 px-15 bg-gray-300 border border-gray-600 rounded-lg ">
-          <span className="md:text-2xl font-bold text-neutral-800">
+        <div className="container w-90 lg:w-160  flex flex-col lg:flex-row lg:justify-center  gap-2 lg:gap-7 items-center mx-auto mt-5 p-5  bg-gray-300 border border-gray-600 rounded-lg ">
+          <span className="lg:text-xl text-sm font-bold text-neutral-800">
             Color Type : {type}{" "}
           </span>
-          <span className="md:text-2xl font-bold text-neutral-800">
+          <span className="md:text-xl text-sm font-bold text-neutral-800">
             Color Value : {color}{" "}
             <IoCopy
               className="inline ml-5 hover:scale-120 transition-transform duration-200 ease-in-out active:scale-90"
