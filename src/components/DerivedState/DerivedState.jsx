@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
 import Header from "../SmallComponents/Header";
+import Explanation from "../SmallComponents/Explanation";
 import { ContextComponent } from "../ContextComponent/ContextComponent";
 
 const DerivedState = () => {
   const { users, setUsers, user, setUser } = useContext(ContextComponent);
+  const explained = "The project is to demonstrate Derived State. Here, we have stored the information of states such as total users from 'users State', last user from 'users state', and unique users from 'users state' in variables. And Used those variables in the componenets. When we add new user to 'users' state, the variables also change and the component re-renders with the latest value of varibales." 
   return (
     <>
-      <Header heading="Derived State" />
+      <Header heading="Derived State Example" />
       {/* Shows the Users Information in Short */}
       
       <UsersInfo />
@@ -15,6 +17,8 @@ const DerivedState = () => {
 
       {/* Shows the User Input Values */}
       <Users />
+
+      <Explanation explained={explained} />
 
     </>
   );

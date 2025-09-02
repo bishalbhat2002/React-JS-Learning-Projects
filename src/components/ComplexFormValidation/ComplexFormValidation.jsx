@@ -1,14 +1,17 @@
 import React from "react";
 import Header from "../SmallComponents/Header";
+import Explanation from "../SmallComponents/Explanation";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
 const AdvancedFormValidation = () => {
+    const explained = "Here, we have created a simple form Validation. The form has 2 input fields - Name and Email. Name is required, minimum length is 3 and maximum length is 30. Email is required, and must be a valid email. Country, Gender, Resume, Terms and Condition are also required, Resume should be PDF, and less than 2MB file.";
   return (
     <>
       <Header heading="Complex Form Validation" />
 
       <FormBody />
+      <Explanation explained={explained} />
     </>
   );
 };
