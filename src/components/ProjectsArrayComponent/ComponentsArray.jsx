@@ -1,3 +1,4 @@
+import FAQ from "../FAQ/FAQ";
 import RColorGenerator from "../RandomColorGenerator/RColorGenerator";
 import StarRating from "../Star-rating/StarRating";
 import ImageSlider from "../ImageSlider/ImageSlider";
@@ -13,6 +14,12 @@ import BasicFormValidation from "../BasicFormValidation/BasicFormValidation";
 import ComplexFormValidation from "../ComplexFormValidation/ComplexFormValidation";
 
 const components = [
+  {
+    projectName: "Frequently Asked Qusestions",
+    description: "Frequently Asked Question answers Show.",
+    path: "/React-JS-Learning-Projects/FAQ",
+    component: <FAQ />,
+  },
   {
     projectName: "Random Color Generator",
     description: "Generates Random Color.",
