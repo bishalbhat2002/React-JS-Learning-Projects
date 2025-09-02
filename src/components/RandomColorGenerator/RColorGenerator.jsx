@@ -112,7 +112,7 @@ const RColorGenerator = () => {
         <Toaster />
       </div>
 
-      <Explanation explained={explained} className="absolute top-5/10 left-5/10 -translate-5/10"/>
+      <Explanation explained={explained} className="absolute top-7/10 left-5/10 -translate-5/10"/>
     </>
   );
 };
