@@ -21,11 +21,16 @@ const ShowProjects = () => {
               key={index}
               className="max-h-50 w-100 p-5 pb-3 md:p-5 rounded bg-white"
             >
-              <h2 className="text-gray-600 text-lg md:text-2xl font-semibold">
-                {index + 1}.&nbsp;{component.projectName}
+              <div className="flex">
+              <h1 className="text-gray-600 text-lg md:text-2xl font-semibold leading-6">
+                {index + 1}.
+              </h1>
+              <h2 className="text-gray-600 text-lg md:text-2xl font-semibold ml-2 leading-6">
+                {component.projectName}
               </h2>
+              </div>
 
-              <p className="mt-1 ml-5 text-md md:text-md text-gray-500">
+              <p className={`mt-1 ${index+1 > 9 ? "ml-7 md:ml-9" : "ml-5 md:ml-6"}  text-md md:text-md text-gray-500`}>
                 {component.description}
               </p>
 
