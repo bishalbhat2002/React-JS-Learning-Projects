@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaStar } from 'react-icons/fa'
 import { useState } from 'react'
+import Header from "../SmallComponents/Header"
+import Explanation from "../SmallComponents/Explanation"
 
 const StarRating = ({noOfStars=5}) => {
      const [rating, setRating] = useState(null);
@@ -17,10 +19,13 @@ const StarRating = ({noOfStars=5}) => {
           setHRating(null);
      }
 
+     const explained = "This project is about Rating Stars. We can rate the products or service as numbers of stars. The higher the stars, better the service or product........ For Best Experience Open this Project in Laptop as in mobile phone, you cannot view hover effects. ";
+
   return (
     <>
-    <h1 className='mt-5 text-2xl md:text-4xl font-bold text-center'>Rating Stars</h1>
-    <div className='h-20 w-90 mx-auto mt-5 p-5 flex justify-center gap-3 border border-b-gray-500 rounded-lg shadow-2xs bg-violet-400'>
+     <Header heading='Rating Stars' />
+
+    <div className='w-90 lg:w-160 mx-auto mt-5 p-5 flex justify-center gap-3 border border-b-gray-500 rounded-lg shadow-2xs bg-violet-400'>
      {
           [...Array(noOfStars)].map((_,index)=>{
                return <FaStar 
@@ -36,6 +41,7 @@ const StarRating = ({noOfStars=5}) => {
      }
      </div>
 
+     <Explanation explained={explained}/>
     </>
      )
   

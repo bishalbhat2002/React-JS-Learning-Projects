@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import QRCode from "react-qr-code";
+import Header from "../SmallComponents/Header";
+import Explanation from "../SmallComponents/Explanation";
 
 const QrCodeGenerator = () => {
   const [inputValue, setInputValue] = useState("");
@@ -21,14 +23,13 @@ const QrCodeGenerator = () => {
     }
   };
 
+  const explained = "This is QR code generator. Here, We can generate QR code.";
   return (
     <>
       <div className="w-full bottom-10 flex justify-center">
-        <h1 className="my-2 px-10 py-5 rounded-md sm:text-lg xl:text-3xl font-extrabold bg-blue-400 text-gray-800 inline-block">
-          QR Code Generator
-        </h1>
+      <Header heading="QR Code Generator"/>
       </div>
-      <section className="max-w-150 mx-auto p-5 rounded bg-red-300">
+      <section className="w-90 lg:w-160 mx-auto p-5 rounded bg-red-300">
         <div className="flex justify-between gap-1">
           <input
             onChange={(e) => handleInput(e)}
@@ -36,11 +37,11 @@ const QrCodeGenerator = () => {
             name="input-text"
             value={inputValue}
             placeholder="Enter your Text here..."
-            className="px-4 py-2 w-8/10 border rounded border-amber-50"
+            className="px-4 py-2 w-9/10 border rounded border-amber-50"
           />
           <button
             onClick={generateQr}
-            className={`px-5 text-lg rounded bg-gray-100 hover:scale-110 transition-transform duration-200 ease-in-out active:scale-95 ${
+            className={`px-2 lg:px-5 text-sm font-semibold rounded bg-gray-100 hover:scale-110 transition-transform duration-200 ease-in-out active:scale-95 ${
               inputValue.trim === "" ? "hidden" : ""
             }`}
           >
@@ -51,16 +52,18 @@ const QrCodeGenerator = () => {
         {showQr === false ? (
           ""
         ) : (
-          <div className="w-85 h-85 mx-auto mt-5 p-5 border border-amber-50 bg-white rounded">
+          <div className="w-80 h-80 mx-auto mt-5 p-5 border border-amber-50 bg-white rounded">
             <QRCode
               size={256}
-              style={{ height: "auto", maxWidth: "300px", width: "300px" }}
+              style={{ height: "auto", maxWidth: "100%", width: "100%" }}
               value={value}
               viewBox={`0 0 256 256`}
             />
           </div>
         )}
+
       </section>
+      <Explanation explained={explained} className="mt-10 lg:mt-15" />
     </>
   );
 };

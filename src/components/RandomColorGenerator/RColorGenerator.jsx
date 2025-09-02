@@ -3,6 +3,7 @@ import { useState } from "react";
 import { IoCopy } from "react-icons/io5";
 import toast, { Toaster } from "react-hot-toast";
 import Header from "../SmallComponents/Header";
+import Explanation from "../SmallComponents/Explanation"
 
 const RColorGenerator = () => {
   const [color, setColor] = useState("gray");
@@ -55,10 +56,10 @@ const RColorGenerator = () => {
 
   const copyColor = () => {
     navigator.clipboard.writeText(color);
-    notify();
+    toast.success("Color Copied Successfully...");
   };
 
-  const notify = () => toast.success("Color Copied Successfully...");
+  const explained="This is Random Color Generator. We can generate RGB or Hex Color randomly here. We can also copy the color code using the copy icon on the right side of color value. ..............The generated color is displayed in the background...... ";
 
   return (
     <>
@@ -110,6 +111,8 @@ const RColorGenerator = () => {
 
         <Toaster />
       </div>
+
+      <Explanation explained={explained} className="absolute top-5/10 left-5/10 -translate-5/10"/>
     </>
   );
 };
