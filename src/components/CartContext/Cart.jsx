@@ -72,7 +72,7 @@ function CartDetails() {
       {
           showItems ? 
           <div className="-mx-5 bg-gray-300 border border-gray-500 py-4 px-5 rounded-lg">
-          <ul className="text-gray-700">
+          <ul className="text-gray-700 text-sm">
                {
                     cartItems.map((item, index)=>{
                          return (
