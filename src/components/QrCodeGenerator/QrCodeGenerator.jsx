@@ -62,6 +62,7 @@ const QrCodeGenerator = () => {
           </div>
         )}
 
+
       </section>
       <Explanation explained={explained} className="mt-10 lg:mt-15" />
     </>

@@ -14,12 +14,12 @@ const ShowProjects = () => {
       <Header />
 
       {/* Project Show Section */}
-      <section className="w-90 lg:w-9/10  mx-auto mb-5 flex justify-center flex-wrap gap-3 lg:gap-6 mt-4 p-5 lg:p-7 rounded-md bg-blue-200 text-gray-700">
+      <section className="w-90 lg:w-9/10  mx-auto mb-5 flex justify-center flex-wrap gap-3 lg:gap-6 mt-4 p-5 lg:p-7 rounded-md bg-zinc-600 text-gray-700 border border-zinc-500">
         {components.map((component, index) => {
           return (
             <div
               key={index}
-              className="max-h-50 w-100 p-5 pb-3 md:p-5 rounded bg-white"
+              className="max-h-50 w-100 p-5 pb-3 md:p-5 rounded bg-zinc-100"
             >
               <div className="flex">
               <h1 className="text-gray-600 text-lg md:text-2xl font-semibold leading-6">
@@ -37,7 +37,7 @@ const ShowProjects = () => {
               <div className="flex justify-end">
                 <Link
                   to={component.path}
-                  className="mt-2 md:mt-5 px-2 md:px-4 py-1 rounded-lg text;md md:text-lg bg-blue-400 text-white hover:scale-110 transition-transform duration-200 ease-in-out active:scale-90 opacity-80 hover:opacity-100"
+                  className="mt-2 md:mt-5 px-2 md:px-4 py-1 rounded-lg text;md md:text-lg bg-zinc-600 text-white hover:scale-110 transition-transform duration-200 ease-in-out active:scale-90 opacity-80 hover:opacity-100"
                 >
                   View Project <GoArrowUpRight className="inline-block" />
                 </Link>
@@ -48,7 +48,7 @@ const ShowProjects = () => {
       </section>
       <div className="text-center mb-5">
         <a href="https://github.com/bishalbhat2002/React-JS-Learning-Projects" target="_blank"
-        className="inline-block px-5 py-2 rounded-md font-semibold text-gray-100 bg-blue-400 hover:scale-110 transition-transform duration-200 ease-in-out">
+        className="inline-block px-5 py-2 rounded-md font-semibold text-gray-100 bg-zinc-800 hover:scale-110 transition-transform duration-200 ease-in-out">
           View-Code
         </a>
       </div>

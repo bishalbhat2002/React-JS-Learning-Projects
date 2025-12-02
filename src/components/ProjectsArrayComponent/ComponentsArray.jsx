@@ -12,6 +12,7 @@ import DerivedState from "../DerivedState/DerivedState";
 import UseRefHookExample from "../UseRefHookExample/UseRefHookExample";
 import BasicFormValidation from "../BasicFormValidation/BasicFormValidation";
 import ComplexFormValidation from "../ComplexFormValidation/ComplexFormValidation";
+import QrCodeWithScrnshot from "../QRCodeWithScrnshot/QrCodeWithScrnshot";
 
 const components = [
   {
@@ -97,6 +98,12 @@ const components = [
     description: "Validating the Complex Form using React Form Hook.",
     path: "/React-JS-Learning-Projects/ComplexFormValidation",
     component: <ComplexFormValidation />
+  }, 
+   {
+    projectName: "Qr Code With Scrnshot",
+    description: "This component allows You to paste Scrnshot and generate QR code in one frame.",
+    path: "/React-JS-Learning-Projects/QrCodeWithScrnshot",
+    component: <QrCodeWithScrnshot />
   }, 
 ];
 
