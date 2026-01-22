@@ -10,7 +10,7 @@ import { ContextProvider } from "./components/ContextComponent/ContextComponent.
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <StrictMode>
+    {/* <StrictMode> */}
       <CounterProvider>
         <CartProvider>
           <UseReducerProvider>
@@ -20,6 +20,6 @@ createRoot(document.getElementById("root")).render(
           </UseReducerProvider>
         </CartProvider>
       </CounterProvider>
-    </StrictMode>
+    {/* </StrictMode> */}
   </BrowserRouter>
 );
