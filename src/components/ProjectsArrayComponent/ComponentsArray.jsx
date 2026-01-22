@@ -13,6 +13,7 @@ import UseRefHookExample from "../UseRefHookExample/UseRefHookExample";
 import BasicFormValidation from "../BasicFormValidation/BasicFormValidation";
 import ComplexFormValidation from "../ComplexFormValidation/ComplexFormValidation";
 import QrCodeWithScrnshot from "../QRCodeWithScrnshot/QrCodeWithScrnshot";
+import InfiniteScrollusingJS from "../InfiniteScrollUsingJS/InfiniteScrollusingJS";
 
 const components = [
   {
@@ -104,6 +105,12 @@ const components = [
     description: "This component allows You to paste Scrnshot and generate QR code in one frame.",
     path: "/React-JS-Learning-Projects/QrCodeWithScrnshot",
     component: <QrCodeWithScrnshot />
+  },
+    {
+    projectName: "Infinite Scroll Using JS",
+    description: "This component allows demonstrates Inifinte Scroll Feature from different social media Website.",
+    path: "/React-JS-Learning-Projects/InfiniteScrollusingJS",
+    component: <InfiniteScrollusingJS />
   }, 
 ];
 
