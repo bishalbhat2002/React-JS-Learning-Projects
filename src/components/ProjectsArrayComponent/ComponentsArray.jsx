@@ -14,6 +14,8 @@ import BasicFormValidation from "../BasicFormValidation/BasicFormValidation";
 import ComplexFormValidation from "../ComplexFormValidation/ComplexFormValidation";
 import QrCodeWithScrnshot from "../QRCodeWithScrnshot/QrCodeWithScrnshot";
 import InfiniteScrollusingJS from "../InfiniteScrollUsingJS/InfiniteScrollusingJS";
+import InfiniteScrollUsingIntersectionObserver from "../InfiniteScrollUsingIntersectionObserver/InfiniteScrollUsingIntersectionObserver";
+import DataFetchInfiniteScrollUsingIntersectionObserver from "../DataFetchInfiniteScrollUsingIntersectionObserver/DataFetchInfiniteScrollUsingIntersectionObserver.jsx";
 
 const components = [
   {
@@ -108,9 +110,21 @@ const components = [
   },
     {
     projectName: "Infinite Scroll Using JS",
-    description: "This component allows demonstrates Inifinte Scroll Feature from different social media Website.",
+    description: "This component demonstrates Inifinte Scroll Feature from different social media Website Using JS methods.",
     path: "/React-JS-Learning-Projects/InfiniteScrollusingJS",
     component: <InfiniteScrollusingJS />
+  },
+  {
+    projectName: "Infinite Scroll Using IO",
+    description: "This component demonstrates Inifinte Scroll Feature from different social media Website using Intersection Observer.",
+    path: "/React-JS-Learning-Projects/InfiniteScrollUsingIntersectionObserver",
+    component: <InfiniteScrollUsingIntersectionObserver />
+  },
+    {
+    projectName: "Infinite Scroll [data fetch] - IO",
+    description: "This component demonstrates Inifinte Scroll Feature (fetches data infinitely through API) from different social media Website using Intersection Observer.",
+    path: "/React-JS-Learning-Projects/DataFetchInfiniteScrollUsingIntersectionObserver",
+    component: <DataFetchInfiniteScrollUsingIntersectionObserver />
   }, 
 ];
 

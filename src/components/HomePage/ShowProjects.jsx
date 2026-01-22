@@ -25,19 +25,19 @@ const ShowProjects = () => {
               <h1 className="text-gray-600 text-lg md:text-2xl font-semibold leading-6">
                 {index + 1}.
               </h1>
-              <h2 className="text-gray-600 text-lg md:text-2xl font-semibold ml-2 leading-6">
+              <h2 className="text-gray-600 text-lg md:text-xl font-semibold ml-2 leading-6">
                 {component.projectName}
               </h2>
               </div>
 
-              <p className={`mt-1 ${index+1 > 9 ? "ml-7 md:ml-9" : "ml-5 md:ml-6"}  text-md md:text-md text-gray-500`}>
+              <p className={`mt-1 ${index+1 > 9 ? "ml-7 md:ml-9" : "ml-5 md:ml-6"}  text-md md:text-md text-gray-500 line-clamp-3`}>
                 {component.description}
               </p>
 
               <div className="flex justify-end">
                 <Link
                   to={component.path}
-                  className="mt-2 md:mt-5 px-2 md:px-4 py-1 rounded-lg text;md md:text-lg bg-zinc-600 text-white hover:scale-110 transition-transform duration-200 ease-in-out active:scale-90 opacity-80 hover:opacity-100"
+                  className="mt-2 md:mt-4 px-2 md:px-4 py-1 rounded-lg text;md md:text-lg bg-zinc-600 text-white hover:scale-110 transition-transform duration-200 ease-in-out active:scale-90 opacity-80 hover:opacity-100"
                 >
                   View Project <GoArrowUpRight className="inline-block" />
                 </Link>
